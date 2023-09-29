@@ -91,7 +91,6 @@ with st.expander("# ¿Dónde puedo aprender a usar IAs?"):
     st.write("Existen muchos recursos desde los cuales puedes aprender a usar la IA. Te recomendamos los siguientes")
     mdlit("- *@(📖)(Guía Práctica para usar IA)(https://www.oneusefulthing.org/p/the-practical-guide-to-using-ai-to)*, Ethan Mollick. Aunque está en inglés, puedes usar un traductor como @(🌎)(Google Translate)(https://translate.google.com/) para traducirla al español.")
     mdlit("- *@(📖)(Qué significa usar la IA como herramienta -de escritura-)(https://www.oneusefulthing.org/p/embracing-weirdness-what-it-means)*, Ethan Mollick. Este artículo está también en inglés, por tanto puedes utilizar Google Translate también.")
-    mdlit("- *@(📖)(Cómo escribir un mejor prompt en ChatGPT)(https://www.evoacademy.cl/como-escribir-un-buen-prompt-en-chatgpt/)*. En este post detallan algunos consejos para escribir un buen *prompt*.")
     st.write("Debes considerar que actualmente las IAs están cambiando día a día, y a una velocidad bastante alta. Por tanto, sugerimos fuertemente estar en constante revisión de los nuevos avances que van surgiendo")
     st.write("Adicionalmente, en IICG estaremos haciendo actividades, tales como charlas y talleres, en donde enseñaremos su uso correcto y cómo sacar provecho de las distintas herramientas. Puedes revisar en este [link]() las actividades que iremos haciendo")
 with st.expander("# Quiero saber sobre las limitaciones y sesgos de las IAs, ¿Dónde puedo leer más al respecto?"):
