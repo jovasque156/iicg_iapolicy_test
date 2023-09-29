@@ -3,6 +3,17 @@ from PIL import Image
 from markdownlit import mdlit
 from streamlit_extras.stylable_container import stylable_container
 
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 chart_1 = Image.open('assets/chart1.png')
 chart_2 = Image.open('assets/chart2.png')
 # Título de la página
@@ -77,18 +88,18 @@ st.header("FAQ", divider='grey', anchor='FAQ')
 with st.expander("# ¿Qué es un prompt?"):
     st.write("Un prompt es una instrucción o una pregunta que se proporciona a una IA para obtener una respuesta específica. Un prompt pueden ser simple o complejo, y pueden incluir información adicional para ayudar a la IA a generar una respuesta más cercano a lo esperado. Para obtener más información sobre como escribir un buen prompt, consulta este [enlace](https://www.evoacademy.cl/como-escribir-un-buen-prompt-en-chatgpt/).")
 with st.expander("# ¿Dónde puedo aprender a usar IAs?"):
-    st.write("Existen muchas recursos desde los cuales puedes aprender a usar. En nuestro caso, recomendamos los siguietnes:")
+    st.write("Existen muchos recursos desde los cuales puedes aprender a usar la IA. Te recomendamos los siguientes")
     mdlit("- *@(📖)(Guía Práctica para usar IA)(https://www.oneusefulthing.org/p/the-practical-guide-to-using-ai-to)*, Ethan Mollick. Aunque está en inglés, puedes usar un traductor como @(🌎)(Google Translate)(https://translate.google.com/) para traducirla al español.")
-    mdlit("- *@(📖)(Qué significa usar la IA como herramienta (de escritura))(https://www.oneusefulthing.org/p/embracing-weirdness-what-it-means)*, Ethan Mollick. Este artículo está también en inglés, así que puedes utilizar Google Translate para apoyarte.")
+    mdlit("- *@(📖)(Qué significa usar la IA como herramienta (de escritura))(https://www.oneusefulthing.org/p/embracing-weirdness-what-it-means)*, Ethan Mollick. Este artículo está también en inglés, así que puedes utilizar Google Translate para apoyarte")
     mdlit("- *@(📖)(Cómo escribir un mejor prompt en ChatGPT)(https://www.evoacademy.cl/como-escribir-un-buen-prompt-en-chatgpt/)*. En este post detallan algunos consejos para escribir un buen *prompt*.")
-    st.write("Debes considerar que actualmente las IAs están cambiando día y a día, y a una velocidad bastante alta. Por tanto sugerimos fuertemente estar en constante revisión de los nuevos avances que van surgiendo día a día.")
-    st.write("Adicionalmente, en IICG estaremos haciendo actividades, tales como charlas y talleres, en donde enseñaremos su uso correcto y cómo sacar provecho de las distintas herramientas. Puedes revisar en este [link]() las actividades que iremos haceindo.")
+    st.write("Debes considerar que actualmente las IAs están cambiando día a día, y a una velocidad bastante alta. Por tanto, sugerimos fuertemente estar en constante revisión de los nuevos avances que van surgiendo")
+    st.write("Adicionalmente, en IICG estaremos haciendo actividades, tales como charlas y talleres, en donde enseñaremos su uso correcto y cómo sacar provecho de las distintas herramientas. Puedes revisar en este [link]() las actividades que iremos haciendo")
 with st.expander("# Quiero saber sobre las limitaciones y sesgos de las IAs, ¿Dónde puedo leer más al respecto?"):
-    st.write("¡Felicitaciones por interesarte de este tema! Aunque este tema es bastante amplio y se viene estudiando desde hace un tiempo, sugerimos comenzar con los siguientes:")
-    st.markdown("- 📖 _Fairness in Machine Learning_, Isabella Grabski. Este artículo publicado el 2020 habla de los sesgos en los modelos. En este [link](https://sitn-hms-harvard-edu.translate.goog/uncategorized/2020/fairness-machine-learning/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp) podrás leer una versión traducida usando Google Translate.")
-    st.markdown("- 🎦 _Algorithmic Bias and Fairness_, Isabella Grabski. Este es un video que explica muy bien los sesgos y sus efectos. Aunque está en inglés, puedes activar subtitulos de inglés a español.")
-    st.markdown("- 🎦 _Coded Bias_, Shalini Kantayya. Este es documental que discute sobre las limitaciones y los sesgos en las IAs. Puedes ver más en este [link](https://www.codedbias.com/about) y si tienes acceso a Netflix, podrás ver el documental ahí.")
-    st.markdown("Adicionalmente, en IICG estaremos haciendo actividades, tales como charlas y talleres, en donde enseñaremos su uso correcto y cómo sacar provecho de las distintas herramientas. Puedes revisar en este [link]() las actividades que iremos haceindo. ")
+    st.write("¡Felicitaciones por interesarte en este tema! Aunque este tema es bastante amplio y se viene estudiando desde hace un tiempo, sugerimos comenzar con los siguientes:")
+    st.markdown("- 📖 _Fairness in Machine Learning_, Isabella Grabski. Este artículo publicado en 2020 habla de los sesgos en los modelos. En este [link](https://sitn-hms-harvard-edu.translate.goog/uncategorized/2020/fairness-machine-learning/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp) podrás leer una versión traducida usando Google Translate.")
+    st.markdown("- 🎦 _Algorithmic Bias and Fairness_, Crash Course. Este es un video que explica muy bien los sesgos y sus efectos. Lo podrás ver en este [link](https://www.youtube.com/watch?v=gV0_raKR2UQ&t=1s) Aunque está en inglés, puedes activar subtítulos de inglés a español.")
+    st.markdown("- 🎦 _Coded Bias_, Shalini Kantayya. Este es un documental que discute sobre las limitaciones y los sesgos en las IAs. Puedes ver más en este link y si tienes acceso a Netflix, podrás ver el documental ahí.")
+    st.markdown("Adicionalmente, en IICG estaremos haciendo actividades, tales como charlas y talleres, en donde enseñaremos su uso correcto y cómo sacar provecho de las distintas herramientas. Puedes revisar en este [link]() las actividades que iremos haciendo.")
 
 st.header("Referencias", divider='grey', anchor='refs')
 mdlit("- Dell'Acqua, F., McFowland, E., Mollick, E. R., Lifshitz-Assaf, H., Kellogg, K., Rajendran, S., ... & Lakhani, K. R. (2023). Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality. _Harvard Business School Technology & Operations Mgt_. Unit Working Paper, (24-013).")
