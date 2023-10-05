@@ -72,8 +72,6 @@ st.write("7. Cada persona debe respetar la privacidad y la seguridad de los dato
 
 # Definición de prompt
 st.header("FAQ", divider='grey', anchor='FAQ')
-with st.expander("# ¿Qué es un prompt?"):
-    st.write("Un prompt es una instrucción o una pregunta que se proporciona a una IA para obtener una respuesta específica. Un prompt pueden ser simple o complejo, y pueden incluir información adicional para ayudar a la aplicación de IA a generar una respuesta más cercano a lo esperado. Para obtener más información sobre como escribir un buen prompt, consulta este [enlace](https://www.evoacademy.cl/como-escribir-un-buen-prompt-en-chatgpt/).")
 with st.expander("# ¿Dónde puedo aprender sobre como usar las distintas IA?"):
     st.write("Existen muchos recursos desde los cuales puedes aprender a usar las herramientas de IA. Te recomendamos los siguientes:")
     mdlit("- *@(📖)(Guía Práctica para usar herramientas de IA)(https://www.oneusefulthing.org/p/the-practical-guide-to-using-ai-to)*, Ethan Mollick. Aunque está en inglés, puedes usar un traductor como @(🌎)(Google Translate)(https://translate.google.com/) para traducirla al español.")
@@ -81,6 +79,8 @@ with st.expander("# ¿Dónde puedo aprender sobre como usar las distintas IA?"):
     st.write("")
     st.write("Las herramientas de IA están en constante evolución y cada día surgen nuevos avances. Por lo tanto, te recomendamos que estés al día con las últimas novedades y tendencias.")
     st.write("Adicionalmente, como IICG estaremos haciendo actividades, tales como charlas y talleres, en donde enseñaremos el uso correcto de herramientas IA y cómo sacar provecho de ellas. Puedes revisar en este [enlace]() la lista de actividades.")
+with st.expander("# ¿Qué es un prompt?"):
+    st.write("Un prompt es una instrucción o una pregunta que se proporciona a una IA para obtener una respuesta específica. Un prompt pueden ser simple o complejo, y pueden incluir información adicional para ayudar a la aplicación de IA a generar una respuesta más cercano a lo esperado. Para obtener más información sobre como escribir un buen prompt, consulta este [enlace](https://www.evoacademy.cl/como-escribir-un-buen-prompt-en-chatgpt/).")
 with st.expander("# ¿Dónde puedo aprender sobre los riesgos y limitaciones de las aplicaciones de IA?"):
     st.write("¡Felicitaciones por el interés! Este tema es bastante amplio y se viene estudiando desde hace un tiempo. Las limitaciones y riesgos son variados, pero te sugerimos partir con estos recursos:")
     st.markdown("- 📖 _Fairness in Machine Learning_, Isabella Grabski. Este artículo publicado en 2020 habla de los sesgos en los modelos detrás de las aplicaciones de IA. En este [enlace](https://sitn-hms-harvard-edu.translate.goog/uncategorized/2020/fairness-machine-learning/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp) podrás leer una versión traducida usando Google Translate.")
@@ -90,7 +90,12 @@ with st.expander("# ¿Dónde puedo aprender sobre los riesgos y limitaciones de 
     st.markdown("- 📖 _¿Qué son las alucinaciones de la aplicaciones de IA?_, IBM. En [este](https://www-ibm-com.translate.goog/topics/ai-hallucinations?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp) artículo la empresa IBM entrega una descripción de este fenómeno, sus implicancias y cómo podemos prevenirlas.")
     st.write("")
     st.markdown("Adicionalmente, como IICG estaremos haciendo actividades tales como charlas y talleres, en donde enseñaremos las limitaciones, riesgos y cómo mitigarlos. Puedes revisar este [enlace]() la lista de actividades.")
-
+with st.expander("# ¿Dónde aprender más sobre la explicabilidad de las herramientas IA?"):
+    st.write("Las herramientas IA son consideradas _black box_, por la complejidad y profundidad de los modelos de _machine learning_ que están detrás de cada una de ellas. Dado esto, en el área es considerado un desafío importante aumentar la explicabilidad. Para adentrarte en el tema, te sugerimos los siguientes recursos académicos:")
+    mdlit("- *@(📖)(Interpretabilidad y Explicabilidad - Un mini recorrido)(https://arxiv.org/abs/2012.01805)*, Marcinkevičs & Vogt. Este es un artículo de investigación que revisa el diseño de la explicabilidad e interpretabilidad de los modelos.")
+    mdlit("- *@(📖)(IA Explicable: una revisión de los métodos de interpretabilidad del aprendizaje automático)(https://www.mdpi.com/1099-4300/23/1/18)*, Linardatos, Papastefanopoulos, y Kotsiantis. Esta es otro artículo de revisión literaria que aborda el XAI: Explainable Artificial Intelligence.")
+    st.write("")
+    st.markdown("Adicionalmente, como IICG estaremos haciendo actividades tales como charlas y talleres, en donde enseñaremos las limitaciones, riesgos y cómo mitigarlos. Puedes revisar este [enlace]() la lista de actividades.")
 st.header("Referencias", divider='grey', anchor='refs')
 mdlit("- Dell'Acqua, F., McFowland, E., Mollick, E. R., Lifshitz-Assaf, H., Kellogg, K., Rajendran, S., ... & Lakhani, K. R. (2023). Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality. _Harvard Business School Technology & Operations Mgt_. Unit Working Paper, (24-013).")
 mdlit("- Mollick, E., & Mollick, L. (9 de Febrero, 2023). Why All Our Classes Suddenly Became AI Classes. _Harvard Business Publishing, Education_. https://hbsp.harvard.edu/inspiring-minds/why-all-our-classes-suddenly-became-ai-classes")
